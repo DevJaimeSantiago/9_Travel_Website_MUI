@@ -1,5 +1,8 @@
+// Components
+import Navbar from "../navbar/Navbar"
+
 // Components - Material UI
-import { Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
 // imagenes
 import BgImage from "../../assets/main/bg-image.svg";
@@ -19,7 +22,13 @@ const Hero = () => {
 					md: "0px 0px 54px 54px",
 				},
 			}}
-		></Container>
+		>
+			<Box
+				sx={{ display: "flex", alignItems: "center", flexDirection: "column" }}
+			>
+                <Navbar />
+            </Box>
+		</Container>
 	);
 };
 export default Hero;
