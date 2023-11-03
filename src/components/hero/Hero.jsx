@@ -1,6 +1,7 @@
 // Components
 import Navbar from "../navbar/Navbar";
 import MainButton from "../main-button/MainButton"
+import SearchNav from "../search-nav/SearchNav"
 
 // Components - Material UI
 import { Box, Container, Typography } from "@mui/material";
@@ -45,6 +46,7 @@ const Hero = () => {
 					Discover the most engaging places
 				</Typography>
 				<MainButton text="Discover on 3D globe" iconImg={BtnGlobalIcon} />
+				<SearchNav />
 			</Box>
 		</Container>
 	);
