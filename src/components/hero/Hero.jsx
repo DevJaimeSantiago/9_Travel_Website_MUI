@@ -1,5 +1,6 @@
 // Components
-import Navbar from "../navbar/Navbar"
+import Navbar from "../navbar/Navbar";
+import MainButton from "../main-button/MainButton"
 
 // Components - Material UI
 import { Box, Container, Typography } from "@mui/material";
@@ -26,8 +27,25 @@ const Hero = () => {
 			<Box
 				sx={{ display: "flex", alignItems: "center", flexDirection: "column" }}
 			>
-                <Navbar />
-            </Box>
+				<Navbar />
+				<Typography
+					sx={{
+						color: "#FFF",
+						marginTop: "196.5px",
+						textAlign: "center",
+						fontWeight: "600",
+						fontSize: {
+							xs: "38px",
+							md: "48px",
+						},
+						lineHeight: "62px",
+						mb: 4,
+					}}
+				>
+					Discover the most engaging places
+				</Typography>
+				<MainButton text="Discover on 3D globe" iconImg={BtnGlobalIcon} />
+			</Box>
 		</Container>
 	);
 };
