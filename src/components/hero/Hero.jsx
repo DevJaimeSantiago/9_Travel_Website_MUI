@@ -32,7 +32,7 @@ const Hero = () => {
 				<Typography
 					sx={{
 						color: "#FFF",
-						marginTop: "196.5px",
+						marginTop: "196.5px", 
 						textAlign: "center",
 						fontWeight: "600",
 						fontSize: {

@@ -2,6 +2,7 @@ import { searchNavItems } from "../../data";
 
 // Components
 import SearchNavItem from "../search-nav-item/SearchNavItem";
+import MainButton from "../main-button/MainButton";
 
 // Components - Material UI
 import { Box, Container } from "@mui/material";
@@ -48,6 +49,7 @@ const SearchNav = () => {
                         iconImg={item.icon}
 					/>
 				))}
+				<MainButton iconImg={navBtnIcon} />
 			</Box>
 		</Container>
 	);
