@@ -1,5 +1,5 @@
 // Components - Material UI
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 // Images - Icons
 import calendarIcon from "../../assets/travel/calendar-icon.svg";
@@ -36,6 +36,31 @@ const TravelItem = ({
 						cursor: "pointer",
 					}}
 				/>
+			</Box>
+			<Box sx={{ position: "relative", maxWidth: "320px" }}>
+				<Typography
+					sx={{
+						fontFamily: "Poppins",
+						fontWeight: "600",
+						fontSize: "20px",
+						color: "#161414",
+						mb: 2,
+					}}
+				>
+					{location}
+				</Typography>
+				<Typography
+					sx={{
+						fontFamily: "Poppins",
+						fontWeight: "400",
+						fontSize: "16px",
+						color: "#5B4B4B",
+						lineHeight: "32px",
+						pb: 7,
+					}}
+				>
+					{text}
+				</Typography>
 			</Box>
 		</Box>
 	);
