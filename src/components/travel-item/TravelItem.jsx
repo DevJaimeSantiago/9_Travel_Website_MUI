@@ -49,6 +49,7 @@ const TravelItem = ({
 				>
 					{location}
 				</Typography>
+
 				<Typography
 					sx={{
 						fontFamily: "Poppins",
@@ -61,6 +62,86 @@ const TravelItem = ({
 				>
 					{text}
 				</Typography>
+
+				<Box
+					sx={{
+						display: "flex",
+						alignItems: "center",
+						gap: 3,
+						position: "absolute",
+						bottom: "0",
+						left: "0",
+					}}
+				>
+					<Box
+						sx={{
+							display: "flex",
+							alignItems: "center",
+							gap: 0.75,
+						}}
+					>
+						<img
+							src={calendarIcon}
+							alt="calendarIcon"
+						/>
+						<Typography
+							sx={{
+								fontFamily: "Poppins",
+								fontWeight: "400",
+								fontSize: "12px",
+								color: "#878787",
+							}}
+						>
+							{calendarText}{" "}
+						</Typography>
+					</Box>
+
+					<Box
+						sx={{
+							display: "flex",
+							alignItems: "center",
+							gap: 0.75,
+						}}
+					>
+						<img
+							src={userIcon}
+							alt="userIcon"
+						/>
+						<Typography
+							sx={{
+								fontFamily: "Poppins",
+								fontWeight: "400",
+								fontSize: "12px",
+								color: "#878787",
+							}}
+						>
+							{userText}
+						</Typography>
+					</Box>
+
+					<Box
+						sx={{
+							display: "flex",
+							alignItems: "center",
+							gap: 0.75,
+						}}
+					>
+						<img
+							src={commentsIcon}
+							alt="commentsIcon"
+						/>
+						<Typography
+							sx={{
+								fontFamily: "Poppins",
+								fontWeight: "400",
+								fontSize: "12px",
+								color: "#878787",
+							}}
+						>
+							{commentsText}
+						</Typography>
+					</Box>
+				</Box>
 			</Box>
 		</Box>
 	);
