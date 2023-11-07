@@ -14,6 +14,7 @@ const App = () => {
 			<HotelAndRestaurants />
 			<Travel />
 			<AboutUs />
+			<Footer />
 		</>
 	);
 };
